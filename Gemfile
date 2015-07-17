@@ -44,9 +44,10 @@ gem 'puma'
 group :test, :development do
 	gem 'byebug'
   gem 'rspec-rails'
-  gem 'database_cleaner'
   gem 'spring'
 end
 group :test do
   gem 'capybara'
 end
+
+ruby "2.2.0"
