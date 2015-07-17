@@ -8,6 +8,7 @@ class Dog < ActiveRecord::Base
 
 	has_attached_file :avatar, {
 		:storage => :s3,
+		:s3_protocol => :https,
 		:bucket => 'puppalsapp',
 		:region => 'us-standard',
 		:convert_options => { :all => "-auto-orient" },

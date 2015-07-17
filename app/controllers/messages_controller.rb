@@ -19,7 +19,6 @@ class MessagesController < ApplicationController
     else
       render json: { errors: @message.errors.full_messages }
     end
-
   end
 
 end
