@@ -1,5 +1,5 @@
 require "aws-sdk"
-AWS.config({
-  :access_key_id => 'AKIAIQHZ7VM2W5R63ZRQ',
-  :secret_access_key => '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'
-})
+AWS::S3::Base.establish_connection!(
+ :access_key_id   => ENV['S3_KEY'],
+ :secret_access_key => ENV['S3_SECRET']
+)

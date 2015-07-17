@@ -34,6 +34,8 @@ gem 'bcrypt', '~> 3.1.7'
 
 gem 'hirb'
 
+gem 'rails_12factor'
+
 gem 'rack-cors', :require => 'rack/cors'
 # Use Unicorn as the app server
 # gem 'unicorn'
