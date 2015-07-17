@@ -26,6 +26,7 @@ gem "paperclip", "~> 4.3"
 
 gem 'geocoder'
 # Needed for image uploading to Amazon S3 bucket
+gem 'aws-s3', '0.6.3'
 gem 'aws-sdk', '< 2.0'
 
 # Use ActiveModel has_secure_password
