@@ -32,7 +32,7 @@ module Puppals
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.middleware.insert_before 0, "Rack::Cors", :debug => true, :logger => (-> { Rails.logger }) do
         allow do
-        origins 'http://localhost:6789'
+        origins 'https://puppals.herokuapp.com'
 
         resource '/cors',
           :headers => :any,
