@@ -44,6 +44,7 @@ gem 'puma'
 group :test, :development do
 	gem 'byebug'
   gem 'rspec-rails'
+  gem 'database_cleaner'
   gem 'spring'
 end
 group :test do
