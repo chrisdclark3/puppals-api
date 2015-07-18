@@ -30,5 +30,4 @@ class MessagesController < ApplicationController
       render json: { errors: @message.errors.full_messages }
     end
   end
-
 end
