@@ -4,26 +4,26 @@ class MessagesController < ApplicationController
   def create
     puts "IN CREATE METHOD"
     puts "PARAMS"
-    puts params['data']
+    puts params[:data]
     puts "PARAMS"
-    puts params['data']
+    puts params[:data]
     puts "PARAMS[sender_id]"
-    puts params['data']['sender_id']
+    puts params[:data][:sender_id]
     puts "PARAMS[recipient_id]"
-    puts params['data']['recipient_id']
+    puts params[:data][:recipient_id]
     puts "PARAMS[new_message]"
-    puts params['data']['new_message']
+    puts params[:data][:new_message]
 
-    if Conversation.between(params['data']['sender_id'], params['data']['recipient_id']).present?
-      @conversation = Conversation.between(params['data']['sender_id'], params['data']['recipient_id']).first
+    if Conversation.between(params[:data][:sender_id], params[:data][:recipient_id]).present?
+      @conversation = Conversation.between(params[:data][:sender_id], params[:data][:recipient_id]).first
     else
-      @conversation = Conversation.create({ sender_id: params['data']['sender_id'], recipient_id: params['data']['recipient_id'] })
+      @conversation = Conversation.create({ sender_id: params[:data][:sender_id], recipient_id: params[:data][:recipient_id] })
     end
 
-    @message = @conversation.messages.build(body: params['data']['new_message'])
-    @message.user_id = params['data']['sender_id']
+    @message = @conversation.messages.build(body: params[:data][:new_message])
+    @message.user_id = params[:data][:sender_id]
     @message.save!
-    @conversations = Conversation.involving(User.find(params['data']['sender_id']))
+    @conversations = Conversation.involving(User.find(params[:data][:sender_id]))
     if (@message.save)
       render json: @conversations.as_json(:include => [ :messages, :sender, :recipient ])
     else
