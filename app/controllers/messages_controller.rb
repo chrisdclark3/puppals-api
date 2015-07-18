@@ -5,14 +5,6 @@ class MessagesController < ApplicationController
     puts "IN CREATE METHOD"
     puts "\n\n\n\nPARAMS"
     puts params
-    puts "\n\n\n\nPARAMS[data]"
-    puts params[:data]
-    puts "\n\n\n\nPARAMS[data][sender_id]"
-    puts params[:data][:sender_id]
-    puts "\n\n\n\nPARAMS[data][recipient_id]"
-    puts params[:data][:recipient_id]
-    puts "\n\n\n\nPARAMS[data][new_message]"
-    puts params[:data][:new_message]
 
     if Conversation.between(params[:data][:sender_id], params[:data][:recipient_id]).present?
       @conversation = Conversation.between(params[:data][:sender_id], params[:data][:recipient_id]).first
