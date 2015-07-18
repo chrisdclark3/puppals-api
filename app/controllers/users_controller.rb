@@ -2,9 +2,16 @@ require "base64"
 
 class UsersController < ApplicationController
 
-  attr_accessor :avatar_url
+  after_action :set_access_control_headers
+  before_action :set_access_control_headers
 
-  skip_before_filter :verify_authenticity_token
+  def set_access_control_headers
+   headers['Access-Control-Allow-Origin'] = "*"
+  end
+
+  skip_before_action :verify_authenticity_token
+
+  attr_accessor :avatar_url
 
   def index
     @users = User.all

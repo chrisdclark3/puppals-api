@@ -1,6 +1,13 @@
 class ConversationsController < ApplicationController
 
-	skip_before_filter :verify_authenticity_token
+	after_action :set_access_control_headers
+  before_action :set_access_control_headers
+  skip_before_action :verify_authenticity_token
+
+  def set_access_control_headers
+   headers['Access-Control-Allow-Origin'] = "*"
+  end
+
 
 	def show
 		@conversations = Conversation.involving(User.find(params[:id]))
