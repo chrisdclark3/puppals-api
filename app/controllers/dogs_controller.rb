@@ -4,12 +4,7 @@ class DogsController < ApplicationController
 
   attr_accessor :avatar_url
 
-  after_action :set_access_control_headers
   skip_before_filter :verify_authenticity_token
-
-  def set_access_control_headers
-   headers['Access-Control-Allow-Origin'] = "*"
-  end
 
   def create
   	puts 'RAILS CREATING DOG...'
