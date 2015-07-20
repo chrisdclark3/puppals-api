@@ -8,7 +8,7 @@ Rails.application.routes.draw do
 
   delete 'sessions/:id' => 'sessions#destroy'
 
-  root 'users#index'
+  # root 'users#index'
 
   get 'users' => 'users#index'
 
