@@ -5,13 +5,13 @@ run Rails.application
 
 $stdout.sync = true
 
+require 'rack/cors'
 use Rack::Cors do
   allow do
-    origins '//puppals.herokuapp.com',
+    origins '*'
     resource '*',
         :methods => [:get, :post, :put, :delete, :options, :patch, :head],
         :headers => :any,
-        :expose  => ['Api-Request-Served'],
         :max_age => 6000
   end
 end
