@@ -2,6 +2,8 @@ require "base64"
 
 class DogsController < ApplicationController
 
+  skip_before_action :verify_authenticity_token
+
   attr_accessor :avatar_url
 
   def create
