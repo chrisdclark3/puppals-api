@@ -2,8 +2,6 @@ require "base64"
 
 class UsersController < ApplicationController
 
-  skip_before_filter :verify_authenticity_token
-
   attr_accessor :avatar_url
 
   def index

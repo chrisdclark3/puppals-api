@@ -4,8 +4,6 @@ class DogsController < ApplicationController
 
   attr_accessor :avatar_url
 
-  skip_before_filter :verify_authenticity_token
-
   def create
   	puts 'RAILS CREATING DOG...'
     puts params
