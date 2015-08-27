@@ -33,7 +33,7 @@ u2 = User.create(
 	first_name: 'Gracie',
 	last_name: 'Allen',
 	email: 'gallen@gmail.com',
-	address: '2224 Chestnut St San Francisco, CA 94123',
+	address: '2209 Chestnut St San Francisco, CA 94123',
 	password_digest: 'password',
 	avatar: File.open("#{Rails.root}/public/system/users/images/2.jpeg"),
 	dogs: Dog.where(id: 2)
@@ -89,7 +89,7 @@ u4 = User.create(
 	first_name: 'Jack',
 	last_name: 'London',
 	email: 'jlondon@gmail.com',
-	address: '2630 Divisadero St, San Francisco, CA 94123',
+	address: '2601 Divisadero St, San Francisco, CA 94123',
 	password_digest: 'password',
 	avatar: File.open("#{Rails.root}/public/system/users/images/4.jpeg"),
 	dogs: Dog.where(id: 4)
@@ -145,7 +145,7 @@ u6 = User.create(
 	first_name: 'Lester',
 	last_name: 'Holt',
 	email: 'lholt@gmail.com',
-	address: '1468 Francisco St, San Francisco, CA 94123',
+	address: '1468-1490 Francisco St, San Francisco, CA 94123',
 	password_digest: 'password',
 	avatar: File.open("#{Rails.root}/public/system/users/images/6.jpeg"),
 	dogs: Dog.where(id: 6)
@@ -229,7 +229,7 @@ u9 = User.create(
 	first_name: 'Jerry',
 	last_name: 'Garcia',
 	email: 'jgarcia@gmail.com',
-	address: '2032 Scott St, San Francisco, CA 94115',
+	address: '2230 Scott St, San Francisco, CA 94115',
 	password_digest: 'password',
 	avatar: File.open("#{Rails.root}/public/system/users/images/9.jpeg"),
 	dogs: Dog.where(id: 9)
@@ -313,7 +313,7 @@ u12 = User.create(
 	first_name: 'Donald',
 	last_name: 'Strickland',
 	email: 'dstrickland@gmail.com',
-	address: '66 Casa Way, San Francisco, CA 94123',
+	address: '67 Casa Way, San Francisco, CA 94123',
 	password_digest: 'password',
 	avatar: File.open("#{Rails.root}/public/system/users/images/12.jpeg"),
 	dogs: Dog.where(id: 12)
@@ -453,7 +453,7 @@ u17 = User.create(
 	first_name: 'Bill',
 	last_name: 'Russell',
 	email: 'brussell@gmail.com',
-	address: '1444 Union St, San Francisco, CA 94109',
+	address: '1445 Union St, San Francisco, CA 94109',
 	password_digest: 'password',
 	avatar: File.open("#{Rails.root}/public/system/users/images/17.jpeg"),
 	dogs: Dog.where(id: 17)
@@ -509,7 +509,7 @@ u19 = User.create(
 	first_name: 'Genevieve',
 	last_name: 'Padalecki',
 	email: 'gpadalecki@gmail.com',
-	address: '1632 North Point St, San Francisco, CA 94123',
+	address: '1626 North Point St, San Francisco, CA 94123',
 	password_digest: 'password',
 	avatar: File.open("#{Rails.root}/public/system/users/images/19.jpeg"),
 	dogs: Dog.where(id: 19)
@@ -593,7 +593,7 @@ u22 = User.create(
 	first_name: 'Liev',
 	last_name: 'Shreiber',
 	email: 'lshreiber@gmail.com',
-	address: '725 Liggett Ave, San Francisco, CA 94129',
+	address: '726 Liggett Ave, San Francisco, CA 94129',
 	password_digest: 'password',
 	avatar: File.open("#{Rails.root}/public/system/users/images/22.jpeg"),
 	dogs: Dog.where(id: 22)
@@ -649,7 +649,7 @@ u24 = User.create(
 	first_name: 'Leslie',
 	last_name: 'Mann',
 	email: 'lmann@gmail.com',
-	address: '2937 Broderick St, San Francisco, CA 94123',
+	address: '2934 Broderick St, San Francisco, CA 94123',
 	password_digest: 'password',
 	avatar: File.open("#{Rails.root}/public/system/users/images/24.jpeg"),
 	dogs: Dog.where(id: 24)
@@ -677,7 +677,7 @@ u25 = User.create(
 	first_name: 'Josh',
 	last_name: 'Hartnett',
 	email: 'jhartnett@gmail.com',
-	address: '49 Pixley St, San Francisco, CA 94123',
+	address: '44 Pixley St, San Francisco, CA 94123',
 	password_digest: 'password',
 	avatar: File.open("#{Rails.root}/public/system/users/images/25.jpeg"),
 	dogs: Dog.where(id: 25)
