@@ -1,4 +1,14 @@
 # rake geocode:all CLASS=User SLEEP=5 BATCH=5
+Geocoder.configure(
+  # geocoding service (see below for supported options):
+  :lookup => :google,
+
+  # geocoding service request timeout, in seconds (default 3):
+  :timeout => 15,
+
+  # set default units to kilometers:
+  :units => :mi,
+)
 
 u1 = User.create(
 	id: 1,
