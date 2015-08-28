@@ -7,5 +7,5 @@ Geocoder.configure(
   :timeout => 15,
 
   # set default units to kilometers:
-  :units => :mi,
+  :units => :km,
 )
