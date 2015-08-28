@@ -20,7 +20,7 @@ class User < ActiveRecord::Base
 		:path => ":class/:attachment/:id.:extension",
 	}
 
-	# geocoded_by :address
+	geocoded_by :address
 	# after_validation :geocode
 
 	validates :avatar, :attachment_presence => true
