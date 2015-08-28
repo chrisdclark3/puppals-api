@@ -1,7 +1,5 @@
-development:
- access_key_id: AKIAIQHZ7VM2W5R63ZRQ
- secret_access_key: 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
-
-production:
- access_key_id: AKIAIQHZ7VM2W5R63ZRQ
- secret_access_key: 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
+require 'aws-sdk'
+AWS.config(
+	access_key_id: ENV['AWS_ACCESS_KEY_ID'),
+	secret_access_key: ENV['AWS_SECRET_ACCESS_KEY']
+)

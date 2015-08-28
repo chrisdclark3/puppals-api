@@ -145,7 +145,7 @@ u6 = User.create(
 	first_name: 'Lester',
 	last_name: 'Holt',
 	email: 'lholt@gmail.com',
-	address: '1468-1490 Francisco St, San Francisco, CA 94123',
+	address: '1490-1498 Francisco St, San Francisco, CA 94123',
 	password_digest: 'password',
 	avatar: File.open("#{Rails.root}/public/system/users/images/6.jpeg"),
 	dogs: Dog.where(id: 6)
@@ -229,7 +229,7 @@ u9 = User.create(
 	first_name: 'Jerry',
 	last_name: 'Garcia',
 	email: 'jgarcia@gmail.com',
-	address: '2230 Scott St, San Francisco, CA 94115',
+	address: '2224-2298 Scott St, San Francisco, CA 94115',
 	password_digest: 'password',
 	avatar: File.open("#{Rails.root}/public/system/users/images/9.jpeg"),
 	dogs: Dog.where(id: 9)

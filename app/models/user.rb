@@ -10,8 +10,6 @@ class User < ActiveRecord::Base
 	validates :first_name, :last_name, :address, :email, :password_digest, presence: true
 	EMAIL_REGEX = /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]+)\z/i
   validates :email, presence: true, uniqueness: { case_sensitive: false }, format: { with: EMAIL_REGEX }
-  geocoded_by :address
-	after_validation :geocode, :if => :address_changed?
 
 	has_attached_file :avatar, {
 		:storage => :s3,

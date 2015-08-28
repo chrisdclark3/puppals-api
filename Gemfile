@@ -24,7 +24,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Used to process images / resize
 gem "paperclip", "~> 4.3"
 
-gem 'geocoder'
 # Needed for image uploading to Amazon S3 bucket
 gem 'aws-s3', '0.6.3'
 gem 'aws-sdk', '< 2.0'
